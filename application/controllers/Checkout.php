@@ -30,8 +30,8 @@ class Checkout extends CI_Controller
         $config['mailtype'] = 'html';
         $config['protocol'] = 'smtp';
         $config['smtp_host'] = 'ssl://smtp.googlemail.com';
-        $config['smtp_user'] = 'mericknugroho@gmail.com';
-        $config['smtp_pass'] = 'h1n4t412';
+        $config['smtp_user'] = 'bms.bintangmuarasejati@gmail.com';
+        $config['smtp_pass'] = 'www.bintangmuarasejati.com';
         $config['charset'] = 'iso-8859-1';
         $config['smtp_port'] = 465;
         $config['wordwrap'] = TRUE;
@@ -39,12 +39,13 @@ class Checkout extends CI_Controller
 
         $data = array(
             'name' => $this->input->post('nama'),
+            'telp' => $this->input->post('telp'),
             'email' => $this->input->post('email'),
             'alamat' => $this->input->post('address'),
             'payment' => $this->input->post('paymentMethod'),
             'an' => $this->input->post('cc-name'),
             'rek' => $this->input->post('cc-number'),
-            'invoice' => date('ymdHis'),
+            'invoice' => date('YmdHis'),
             'date' => date('Y-m-d H:i:s')
         );
         

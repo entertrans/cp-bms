@@ -45,6 +45,11 @@
                     </div>
 
                     <div class="mb-3">
+                        <label for="telp">Wa/Telp</label>
+                        <input type="text" class="form-control" name="telp" id="telp">
+                    </div>
+
+                    <div class="mb-3">
                         <label for="email">Email</label>
                         <input type="email" class="form-control" name="email" id="email">
                     </div>

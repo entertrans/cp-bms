@@ -1,16 +1,16 @@
 /*Theme Scripts */
 
 (function($){ "use strict";
-             
+
     $(window).on('load', function() {
         $('body').addClass('loaded');
     });
-             
+
 /*=========================================================================
 	Header
-=========================================================================*/
+    =========================================================================*/
     var primaryHeader = $('.primary-header'),
-        headerClone = primaryHeader.clone();
+    headerClone = primaryHeader.clone();
     $('.header').after('<div class="sticky-header"></div>');
     $('.sticky-header').html(headerClone);
     var headerSelector = document.querySelector(".sticky-header");
@@ -57,9 +57,9 @@
     // Transparent Header
     function transparentHeader(){
         var header = $('.header.header-three'),
-            headerHeight = header.height(),
-            pageHeader = $('.page-header');
-            pageHeader.css('padding-top', headerHeight + 'px');
+        headerHeight = header.height(),
+        pageHeader = $('.page-header');
+        pageHeader.css('padding-top', headerHeight + 'px');
     }
 
     //responsiveClasses();
@@ -81,11 +81,11 @@
             offset: "80%",
             triggerOnce: true
         }
-    );
+        );
 
 /*=========================================================================
 	Main Slider
-=========================================================================*/ 
+    =========================================================================*/ 
     $(document).ready(function () {
 
         $('#main-slider').on('init', function(e, slick) {
@@ -93,17 +93,21 @@
             doAnimations($firstAnimatingElements);    
         });
         $('#main-slider').on('beforeChange', function(e, slick, currentSlide, nextSlide) {
-                  var $animatingElements = $('div.single-slide[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
-                  doAnimations($animatingElements);    
-        });
+          var $animatingElements = $('div.single-slide[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
+          doAnimations($animatingElements);    
+      });
         $('#main-slider').slick({
            autoplay: true,
-           autoplaySpeed: 10000,
+           loop: true,
+           smartSpeed: 500,
+           autoplaySpeed: 2000,
+           slidesToShow:1,
+           slidesToScroll:1,
            dots: true,
            fade: true,
            prevArrow: '<div class="slick-prev"><i class="fa fa-chevron-left"></i></div>',
-                nextArrow: '<div class="slick-next"><i class="fa fa-chevron-right"></i></div>'
-        });
+           nextArrow: '<div class="slick-next"><i class="fa fa-chevron-right"></i></div>'
+       });
         function doAnimations(elements) {
             var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
             elements.each(function() {
@@ -119,11 +123,19 @@
                 });
             });
         }
+
+     //    $('#main-slider').owlCarousel({
+     //     loop: true,
+     //     autoplay: true,
+     //     smartSpeed: 500,
+     // });
     });
-             
+
+
+
 /*=========================================================================
     Service Carousel
-=========================================================================*/
+    =========================================================================*/
     $('#service-carousel').owlCarousel({
         loop: true,
         margin: 0,
@@ -150,7 +162,7 @@
 
 /*=========================================================================
     Projects Carousel
-=========================================================================*/
+    =========================================================================*/
     $('#projects-carousel').owlCarousel({
         loop: true,
         margin: 0,
@@ -177,7 +189,7 @@
 
 /*=========================================================================
     Project Single Carousel
-=========================================================================*/
+    =========================================================================*/
     $('#project-single-carousel').owlCarousel({
         loop: true,
         margin: 5,
@@ -204,7 +216,7 @@
 
 /*=========================================================================
     Testimonial Carousel
-=========================================================================*/
+    =========================================================================*/
     $('#testimonial-carousel').owlCarousel({
         loop: true,
         margin: 10,
@@ -232,7 +244,7 @@
 
 /*=========================================================================
     Sponsor Carousel
-=========================================================================*/
+    =========================================================================*/
     $('#sponsor-carousel').owlCarousel({
         loop: true,
         margin: 5,
@@ -257,17 +269,17 @@
             }
         }
     });
-             
+
 /*=========================================================================
 	Initialize smoothscroll plugin
-=========================================================================*/
-	smoothScroll.init({
-		offset: 60
-	});
-	 
+    =========================================================================*/
+    smoothScroll.init({
+      offset: 60
+  });
+
 /*=========================================================================
 	Scroll To Top
-=========================================================================*/ 
+    =========================================================================*/ 
     $(window).on( 'scroll', function () {
         if ($(this).scrollTop() > 100) {
             $('#scroll-to-top').fadeIn();
@@ -278,20 +290,20 @@
 
 /*=========================================================================
 	WOW Active
-=========================================================================*/ 
-   new WOW().init();
+    =========================================================================*/ 
+    new WOW().init();
 
 /*=========================================================================
     Active venobox
-=========================================================================*/
+    =========================================================================*/
     $('.img-popup').venobox({
         numeratio: true,
         infinigall: true
     });
-             
+
 /*=========================================================================
 	MAILCHIMP
-=========================================================================*/ 
+    =========================================================================*/ 
 
     if ($('.subscribe_form').length>0) {
         /*  MAILCHIMP  */
@@ -325,7 +337,7 @@
 
 /*=========================================================================
     Google Map Settings
-=========================================================================*/
+    =========================================================================*/
     if($("body").hasClass("contact-page")){
         google.maps.event.addDomListener(window, 'load', init);
 

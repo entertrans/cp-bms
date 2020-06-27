@@ -7,8 +7,12 @@
   <meta name="author" content="AlexaTheme">
   <title>PT Bintang Muara Sejati</title>
 
+ <!--Floating WhatsApp css-->
+  <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+
   <link rel="shortcut icon" type="image/x-icon" href="<?= base_url() ?>assets/mockup/core/img/logo.jpeg">
   <link rel="stylesheet" href="<?= base_url(); ?>assets/mockup/core/css/fontawesome.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="<?= base_url(); ?>assets/mockup/core/css/themify-icons.css">
   <link rel="stylesheet" href="<?= base_url(); ?>assets/mockup/core/css/elegant-line-icons.css">
   <link rel="stylesheet" href="<?= base_url(); ?>assets/mockup/core/css/elegant-font-icons.css">
@@ -30,6 +34,10 @@
   <!-- custome css -->
   <link rel="stylesheet" href="<?= base_url(); ?>assets/mockup/core/dist/css/mycss.css">
 
+
+
+
+
   <style>
     .dropdown-menu.show {
       width: max-content;
@@ -40,10 +48,20 @@
     .img-thumbnail {
       height: 100px;
     }
+       /* .floating-wpp-button{
+        width: 50px !important;
+        height: 52px !important;
+    }*/
+/*    .floating-wpp .floating-wpp-popup.active{
+        bottom: 72px !important;
+    }*/
   </style>
 </head>
 
 <body>
+
+
   <div class="site-preloader-wrap">
     <div class="spinner"></div>
   </div>
+  

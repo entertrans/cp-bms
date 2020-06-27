@@ -1,7 +1,7 @@
 <!-- Slider -->
 <div id="main-slider" class="dl-slider">
     <?php foreach ($slider as $dt) {
-    ?>
+        ?>
         <div class="single-slide">
             <div class="bg-img kenburns-top-right" style="background-image: url(<?= base_url('assets/mockup/core/img/slider/') . $dt['photo_slider'] ?>);background-size: cover;background-position: center;"></div>
             <div class="overlay"></div>
@@ -25,23 +25,140 @@
                         </div>
                     </div> -->
 
-                        <div class="dl-caption small">
-                            <div class="inner-layer">
-                                <div data-animation="fade-in-left" data-delay="3s"><?= $dt['desc_slider']  ?></div>
-                            </div>
+                    <div class="dl-caption small">
+                        <div class="inner-layer">
+                            <div data-animation="fade-in-left" data-delay="3s"><?= $dt['desc_slider']  ?></div>
                         </div>
-
-                        <div class="dl-btn-group">
-                            <div class="inner-layer">
-                                <a href="<?= site_url('project') ?>" class="dl-btn" data-animation="fade-in-left" data-delay="3.5s">View Projects <i class="arrow_right"></i></a>
-                            </div>
-                        </div>
-
                     </div>
+
+                    <div class="dl-btn-group">
+                        <div class="inner-layer">
+                            <a href="<?= site_url('project') ?>" class="dl-btn" data-animation="fade-in-left" data-delay="3.5s">View Projects <i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-    <?php }  ?>
+    </div>
+    <div class="single-slide">
+            <div class="bg-img kenburns-top-right" style="background-image: url(<?= base_url('assets/mockup/core/img/slider/') . $dt['photo_slider'] ?>);background-size: cover;background-position: center;"></div>
+            <div class="overlay"></div>
+            <div class="slider-content-wrap d-flex align-items-center text-left">
+                <div class="container ">
+                    <div class="slider-content col-sm-6">
+                        <div class="dl-caption medium">
+                            <div class="inner-layer">
+                                <div data-animation="fade-in-right" data-delay="1s"><?= $dt['kt_slider']  ?></div>
+                            </div>
+                        </div>
+                        <div class="dl-caption big">
+                            <div class="inner-layer">
+                                <div data-animation="fade-in-left" data-delay="2s"><?= $dt['judul_slider']  ?></div>
+                            </div>
+                        </div>
+
+                        <!--                     <div class="dl-caption big">
+                        <div class="inner-layer">
+                            <div data-animation="fade-in-left" data-delay="2.5s">construction services.</div>
+                        </div>
+                    </div> -->
+
+                    <div class="dl-caption small">
+                        <div class="inner-layer">
+                            <div data-animation="fade-in-left" data-delay="3s"><?= $dt['desc_slider']  ?></div>
+                        </div>
+                    </div>
+
+                    <div class="dl-btn-group">
+                        <div class="inner-layer">
+                            <a href="<?= site_url('project') ?>" class="dl-btn" data-animation="fade-in-left" data-delay="3.5s">View Projects <i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="single-slide">
+            <div class="bg-img kenburns-top-right" style="background-image: url(<?= base_url('assets/mockup/core/img/slider/') . $dt['photo_slider'] ?>);background-size: cover;background-position: center;"></div>
+            <div class="overlay"></div>
+            <div class="slider-content-wrap d-flex align-items-center text-left">
+                <div class="container ">
+                    <div class="slider-content col-sm-6">
+                        <div class="dl-caption medium">
+                            <div class="inner-layer">
+                                <div data-animation="fade-in-right" data-delay="1s"><?= $dt['kt_slider']  ?></div>
+                            </div>
+                        </div>
+                        <div class="dl-caption big">
+                            <div class="inner-layer">
+                                <div data-animation="fade-in-left" data-delay="2s"><?= $dt['judul_slider']  ?></div>
+                            </div>
+                        </div>
+
+                        <!--                     <div class="dl-caption big">
+                        <div class="inner-layer">
+                            <div data-animation="fade-in-left" data-delay="2.5s">construction services.</div>
+                        </div>
+                    </div> -->
+
+                    <div class="dl-caption small">
+                        <div class="inner-layer">
+                            <div data-animation="fade-in-left" data-delay="3s"><?= $dt['desc_slider']  ?></div>
+                        </div>
+                    </div>
+
+                    <div class="dl-btn-group">
+                        <div class="inner-layer">
+                            <a href="<?= site_url('project') ?>" class="dl-btn" data-animation="fade-in-left" data-delay="3.5s">View Projects <i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="single-slide">
+            <div class="bg-img kenburns-top-right" style="background-image: url(<?= base_url('assets/mockup/core/img/slider/') . $dt['photo_slider'] ?>);background-size: cover;background-position: center;"></div>
+            <div class="overlay"></div>
+            <div class="slider-content-wrap d-flex align-items-center text-left">
+                <div class="container ">
+                    <div class="slider-content col-sm-6">
+                        <div class="dl-caption medium">
+                            <div class="inner-layer">
+                                <div data-animation="fade-in-right" data-delay="1s"><?= $dt['kt_slider']  ?></div>
+                            </div>
+                        </div>
+                        <div class="dl-caption big">
+                            <div class="inner-layer">
+                                <div data-animation="fade-in-left" data-delay="2s"><?= $dt['judul_slider']  ?></div>
+                            </div>
+                        </div>
+
+                        <!--                     <div class="dl-caption big">
+                        <div class="inner-layer">
+                            <div data-animation="fade-in-left" data-delay="2.5s">construction services.</div>
+                        </div>
+                    </div> -->
+
+                    <div class="dl-caption small">
+                        <div class="inner-layer">
+                            <div data-animation="fade-in-left" data-delay="3s"><?= $dt['desc_slider']  ?></div>
+                        </div>
+                    </div>
+
+                    <div class="dl-btn-group">
+                        <div class="inner-layer">
+                            <a href="<?= site_url('project') ?>" class="dl-btn" data-animation="fade-in-left" data-delay="3.5s">View Projects <i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<?php }  ?>
 
     <!--     <div class="single-slide">
         <div class="bg-img kenburns-top-right" style="background-image: url(<?= base_url('assets/mockup/core/img/slider-2.jpg') ?>);"></div>

@@ -1,9 +1,10 @@
+
 <section class="widget-section padding">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-sm-6 sm-padding">
                 <div class="widget-content">
-                    <a href="#"><img style="margin-top: 30px;" src="<?= base_url() ?>assets/mockup/core/img/logo-project2.png" alt="brand"></a>
+                    <a href="#"><img style="margin-top: 30px; max-width: 100%;" src="<?= base_url() ?>assets/mockup/core/img/logo-project2.png" alt="brand"></a>
                 </div>
             </div>
             <!-- <div class="col-lg-2 col-sm-6 sm-padding">
@@ -23,12 +24,12 @@
                     <p>Jl. Cilincing Baru Pangkalan Pasir No. 38 Cilincing, Jakarta Utara
                         <br>Telp. : (021) 4494 0288 - 440 5323
                         <br>Fax. : (021) 440 5323
-                    <br>Email : bintang.muara09@yahoo.com</p>
+                        <br>Email : bintang.muara09@yahoo.com</p>
 
                     <!-- <span><a href="http://html.dynamiclayers.net/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a8e0cdc4c4c7e8e9c4cdd0c9fcc0cdc5cd86c6cddc">[email&#160;protected]</a></span>
-                    <span>(+123) 456 789 101</span> -->
+                        <span>(+123) 456 789 101</span> -->
+                    </div>
                 </div>
-            </div>
 <!--             <div class="col-lg-4 col-sm-6 sm-padding">
                 <div class="widget-content">
                     <h4>Newslatter Subscription</h4>
@@ -55,4 +56,23 @@
         <p><a href="templateshub.net">@copyright PT.Bintang Muara Sejati</a></p>
     </div>
 </footer> -->
-<a data-scroll href="#header" id="scroll-to-top"><i class="arrow_carrot-up"></i></a>
+    <div id="WAButton"></div> 
+<!-- <a data-scroll href="#header" id="scroll-to-top"><i class="arrow_carrot-up"></i></a> -->
+<!--Div where the WhatsApp will be rendered-->  
+<script type="text/javascript">  
+   $(function () {
+        $('#WAButton').floatingWhatsApp({
+            phone: '62895348764795',
+            headerTitle: 'PT Bintang Muara Sejahtera',
+            popupMessage: 'Ada Yang Ingin Anda Tanyakan??',
+            zIndex: 9999,
+            showPopup: true,
+            backgroundColor: 'crimson',
+            size:52,
+            position: 'right', // left or right
+            autoOpen: false, // true or false
+            //autoOpenTimer: 4000,
+        });
+    });
+</script>
+

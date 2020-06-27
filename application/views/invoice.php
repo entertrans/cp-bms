@@ -7,11 +7,12 @@
      <div class="card" style="box-sizing: border-box;position: relative;display: flex;-ms-flex-direction: column;flex-direction: column;min-width: 0;word-wrap: break-word;background-color: #fff;background-clip: border-box;border: 1px solid rgba(0,0,0,.125);border-radius: .25rem;">
          <div class="card-header p-4" style="box-sizing: border-box;padding: 1.5rem!important;margin-bottom: 0;background-color: rgba(0,0,0,.03);border-bottom: 1px solid rgba(0,0,0,.125);border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;">
              <div class="float-left" style="box-sizing: border-box;float: left!important;">
-                 <h3 class="mb-0" style="box-sizing: border-box;margin-top: 0;margin-bottom: 0!important;font-family: inherit;font-weight: 500;line-height: 1.2;color: inherit;font-size: 1.75rem;orphans: 3;widows: 3;page-break-after: avoid;">[logo]</h3>
+                 <h3 class="mb-0" style="box-sizing: border-box;margin-top: 0;margin-bottom: 0!important;font-family: inherit;font-weight: 500;line-height: 1.2;color: inherit;font-size: 1.75rem;orphans: 3;widows: 3;page-break-after: avoid;">
+                    <img src="https://lh3.googleusercontent.com/9FPnrq3D6RC5L7jdGtkVj3-Km-lgnqJnmDa8a0aMiuCf8GLa4txFDN6F8yTwJSCenYb1H_4ms0K9LIiigzSzkie7f-Nd5iae1kDdpakcUrFxeW3wj1-eP8BDdXklG-yrfdGPeLj6ngz9lucXtPFHSSjU5YvdS3n0P8tElUudrrMhER8-zRQILX0abZd1nOFkL0nfXEjHPg_lIXyaaE7rhkh-btSOwzbtvefkHOei29g4qqbRAzRZJUITDYTRDP2S8FMF-Lke916Wv7ZzMRRNqXx6ZKL-LXERN25AsBBCtnJHA9BcEEBUeorgszyeZoviNlNP_FkmEmP6PItKVt4O7Urk4_ayWTWFYIeoKRf9UzZW3wzif4SWVMgVeLuVd46vvKzhJqzuWQSiEVh1sFna3vwm6Rg2TIWnqqXIWk3vMohXVkFjLsJpdwzw2G3iBm3VsJMqsBpNM0SSO7PxvBUS7oyZUUyzlmudP0crqiDAlRHkKFvljd5O16KBkz4dfx-6UHl1TLAl7Uvfae65IKjwsm6IR5XPRgIOVoupPtm0U__9tkWeuAvevqzbuaskLQZPhvNbeOmwVgZqghsVfO3yqDz9bDtxyVHa7zd2zrGM0ae7zuXwMfS0awclQVN2I8KkN9FtHClHth7xlpS4BQ_oYDhHzFdyr9sbZ7TsG1LkzrLr35mUPWHMYkJFCx0v=w625-h654-no?authuser=4" style="max-width: 100px;"></h3>
              </div>
              <div class="float-right" style="box-sizing: border-box;float: right!important;">
                  <h3 class="mb-0" style="box-sizing: border-box;margin-top: 0;margin-bottom: 0!important;font-family: inherit;font-weight: 500;line-height: 1.2;color: inherit;font-size: 1.75rem;orphans: 3;widows: 3;page-break-after: avoid;">Invoice #<?= $invoice ?></h3>
-                 Date: <?= $date ?>
+                 Tanggal: <?= $date ?>
              </div>
          </div>
          <div class="card-body" style="box-sizing: border-box;-ms-flex: 1 1 auto;flex: 1 1 auto;padding: 1.25rem;">
@@ -19,17 +20,17 @@
                  <div class="col-sm-6" style="box-sizing: border-box;position: relative;width: 100%;min-height: 1px;padding-right: 15px;padding-left: 15px;-ms-flex: 0 0 50%;flex: 0 0 50%;max-width: 50%;">
                      <h5 class="mb-3" style="box-sizing: border-box;margin-top: 0;margin-bottom: 1rem!important;font-family: inherit;font-weight: 500;line-height: 1.2;color: inherit;font-size: 1.25rem;">From:</h5>
                      <h3 class="text-dark mb-1" style="box-sizing: border-box;margin-top: 0;margin-bottom: .25rem!important;font-family: inherit;font-weight: 500;line-height: 1.2;color: #343a40!important;font-size: 1.75rem;orphans: 3;widows: 3;page-break-after: avoid;">PT Bintang Muara Sejati</h3>
-                     <div style="box-sizing: border-box;">29, Singla Street</div>
-                     <div style="box-sizing: border-box;">Sikeston,New Delhi 110034</div>
-                     <div style="box-sizing: border-box;">Email: contact@bbbootstrap.com</div>
-                     <div style="box-sizing: border-box;">Phone: +91 9897 989 989</div>
+                     <div style="box-sizing: border-box;">Jl. Cilincing Baru Pangkalan Pasir </div>
+                     <div style="box-sizing: border-box;">No. 38 Cilincing, Jakarta Utara </div>
+                     <div style="box-sizing: border-box;">Email: admin@bintangmuarasejati.com</div>
+                     <div style="box-sizing: border-box;">Telp: (021) 4494 0288 - 440 5323 </div>
                  </div>
                  <div class="col-sm-6 " style="box-sizing: border-box;position: relative;width: 100%;min-height: 1px;padding-right: 15px;padding-left: 15px;-ms-flex: 0 0 50%;flex: 0 0 50%;max-width: 50%;">
                      <h5 class="mb-3" style="box-sizing: border-box;margin-top: 0;margin-bottom: 1rem!important;font-family: inherit;font-weight: 500;line-height: 1.2;color: inherit;font-size: 1.25rem;">To:</h5>
                      <h3 class="text-dark mb-1" style="box-sizing: border-box;margin-top: 0;margin-bottom: .25rem!important;font-family: inherit;font-weight: 500;line-height: 1.2;color: #343a40!important;font-size: 1.75rem;orphans: 3;widows: 3;page-break-after: avoid;"><?= $name ?></h3>
                      <div style="box-sizing: border-box;"><?= $alamat ?></div>
                      <div style="box-sizing: border-box;">Email: <?= $email ?></div>
-                     <div style="box-sizing: border-box;">Phone: +91 9897 989 989</div>
+                     <div style="box-sizing: border-box;">Wa/Telp: <?= $telp ?></div>
                  </div>
              </div>
              <div class="row mb-4" style="box-sizing: border-box;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;margin-right: -15px;margin-left: -15px;margin-bottom: 1.5rem!important;">

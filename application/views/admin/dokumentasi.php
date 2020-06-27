@@ -9,6 +9,7 @@
                         <div class="card-header">
                             <h3 class="card-title">
                                 <span class="btn btn-sm btn-primary" data-toggle="modal" data-target="#tambahDokumentasi">Tambah Data</span>
+                                <span class="btn btn-sm btn-success" data-toggle="modal" data-target="#tambahVideo">Tambah video</span>
                             </h3>
                         </div>
                         <!-- /.card-header -->
@@ -28,7 +29,7 @@
                                     <?php foreach ($dokumentasi as $dt) { ?>
                                         <tr>
                                             <td width="20px"><?= $no++ ?></td>
-                                            <td class="text-center" style="width: 20%;"><img class="img-fluid img-thumbnail" style="cursor: pointer;" src="<?= base_url('assets/mockup/core/img/dokumentasi/') . $dt['photo_dok'] ?>" alt="<?= $dt['pr_title'] ?>" width="100px" height="50px">
+                                            <td class="text-center" style="width: 20%;"><img class="img-fluid img-thumbnail" style="cursor: pointer;" src="<?= base_url('assets/mockup/core/img/dokumentasi/') . $dt['file_dok'] ?>" alt="<?= $dt['pr_title'] ?>" width="100px" height="50px">
                                             </td>
                                             <td>
                                                 <?= $dt['pr_title'] ?>
@@ -36,7 +37,7 @@
                                                 <?= $dt['pr_desc'] ?>
                                             </td>
                                             <td width="100px" class="text-center">
-                            
+
                                                 <p class="btn btn-danger btn-xs" data-toggle="modal" data-target="#hapusDokumentasi<?= $dt['id_dokumentasi'] ?>">Hapus</p>
                                             </td>
                                         </tr>
@@ -126,6 +127,55 @@
                             <input type="file" class="form-control-file" name="xfile">
                         </div>
                     </div>
+                    <div class="form-group row">
+                        <label for="inputPassword" class="col-sm-4 col-form-label">Title</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" placeholder="Masukan Title" name="title">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputPassword" class="col-sm-4 col-form-label">Deskripsi</label>
+                        <div class="col-sm-8">
+                            <textarea class="form-control" rows="3" name="deskripsi"></textarea>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Modal Video-->
+<div class="modal fade" id="tambahVideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Tambah Video</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="<?= site_url('admin/dokumentasi/addVideo') ?>" method="post" enctype="multipart/form-data">
+                <div class="modal-body">
+
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-4 col-form-label">Thumbnail Video</label>
+                        <div class="col-sm-8">
+                            <input type="file" class="form-control-file" name="xfile">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="staticEmail" class="col-sm-4 col-form-label">Video</label>
+                        <div class="col-sm-8">
+                            <input type="file" class="form-control-file" name="xvideo">
+                        </div>
+                    </div>
+
                     <div class="form-group row">
                         <label for="inputPassword" class="col-sm-4 col-form-label">Title</label>
                         <div class="col-sm-8">
